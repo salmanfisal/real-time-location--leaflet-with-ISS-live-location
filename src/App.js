@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import{ BrowserRouter,Route,Routes} from "react-router-dom";
+import Contacts from "./contacts.js";
+import Chart from "./chart.js";
+import Home from "./home.js";
+import Geolocation from "./geolocation.js";
+import Leaflet from "./leaflet.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Geolocation />
+      {/* <Leaflet/> */}
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path= "/contacts" element= {<Contacts />} /> 
+      <Route path= "/chart" element= {<Chart/>} /> 
+
+    </Routes>
+    </BrowserRouter>
     </div>
   );
 }
