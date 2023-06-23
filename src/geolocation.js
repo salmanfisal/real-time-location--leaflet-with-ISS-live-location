@@ -23,7 +23,7 @@ function Goelocation() {
     console.log(lon);
   }, [lat, lon]);
   useEffect(() => {
-    setInterval(fetchdata, 10000);
+    setInterval(fetchdata, 2000);
   }, []);
   return (
     <div>
