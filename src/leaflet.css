@@ -1,4 +1,7 @@
-/* MapContainer{
-    height:10px;
-    width:100px;
-} */
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 300px;
+  gap: 5px;
+}

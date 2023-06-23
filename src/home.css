@@ -1,0 +1,54 @@
+.sal {
+  color: aquamarine;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  /* margin-left: 400px; */
+  font-size: 25px;
+  animation: salman 4s ease-in-out 2s infinite alternate-reverse;
+}
+@keyframes salman {
+  /* 0%{
+        transform: scaleX(0.5);
+    }
+    40%{
+        transform:scaleX(1)
+    }
+    70%{
+        transform: scaleX(1.2);
+    }
+    100%{
+        transform: scaleX(1.5);
+    } */
+  from {
+    left: 0px;
+    color: cadetblue;
+    font-size: 10px;
+  }
+
+  to {
+    left: 100px;
+    color: aquamarine;
+    font-size: 12px;
+  }
+  to {
+    left: 200px;
+    color: darkgreen;
+    font-size: 15px;
+  }
+  to {
+    left: 300px;
+    color: darkcyan;
+    font-size: 18px;
+  }
+  to {
+    left: 400px;
+    color: dimgray;
+    font-size: 21px;
+  }
+  to {
+    left: 500px;
+    color: indigo;
+    font-size: 25px;
+  }
+}
